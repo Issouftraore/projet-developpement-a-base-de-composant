@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s  # Intervalle de récupération des métriques
+
+scrape_configs:
+  - job_name: 'spring-boot-app'
+    static_configs:
+      - targets: ['app:8080']  # Le conteneur de l'application
