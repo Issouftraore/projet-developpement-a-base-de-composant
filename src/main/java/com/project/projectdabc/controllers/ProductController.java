@@ -17,7 +17,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @GetMapping
+    /*@GetMapping
     public List<Product> getAllProducts() {
         return productService.getAllProducts();
     }
@@ -37,7 +37,7 @@ public class ProductController {
     public ResponseEntity<Product> updateProduct(@PathVariable Long id, @RequestBody ProductRequest productRequest) {
         Product updatedProduct = productService.updateProduct(id, productRequest);
         return ResponseEntity.ok(updatedProduct);
-    }
+    }*/
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
